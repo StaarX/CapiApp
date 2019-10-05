@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "6655988805",
+    "firebase_url": "https://proyectocaapital.firebaseio.com",
+    "project_id": "proyectocaapital",
+    "storage_bucket": "proyectocaapital.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6655988805:android:8f68eef03098fae5",
+        "android_client_info": {
+          "package_name": "hernandez.junnior.proyectocaapital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6655988805-ole2gaeet2t41p9lfd2vcv2m8uu3ed5j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hernandez.junnior.proyectocaapital",
+            "certificate_hash": "6f1701c1bbe5a6e46e270e489a01c79f14b731d8"
+          }
+        },
+        {
+          "client_id": "6655988805-5jv3nqrrb8go6m1csi3hrvdin07d1kg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT9_U8QOuR4r5xcbBLuroiSTWcx4ypApQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6655988805-5jv3nqrrb8go6m1csi3hrvdin07d1kg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
