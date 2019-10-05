@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:src="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D6FEF7">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:background="#53875A">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="RECETAS"
+                android:textSize="10pt"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#F7EBE3"
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="#7CCA87"
+        android:orientation="vertical">
+
+
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Platillos rápidos" android:background="@drawable/botones_listarecetas"
+                    android:id="@+id/btn_platillosR"/>
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Platillos estudiambres" android:background="@drawable/botones_listarecetas"
+                    android:id="@+id/btn_platillosEstudiambre"/>
+            <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Postres"
+                    android:background="@drawable/botones_listarecetas" android:id="@+id/btn_postres"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                          android:orientation="horizontal">
+
+
+                <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Cerrar Sesión"
+                        android:textSize="4.4pt" android:background="@drawable/botones_listarecetas"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="bottom" android:textColor="#060606"
+                        android:id="@+id/btn_cerrarSesion"
+                        android:textStyle="bold"
+                        android:drawableLeft="@drawable/usuario_cerrarsesion"
+                />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenedor">
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vistaListaOriginal">
+    </ListView>
+
+</FrameLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

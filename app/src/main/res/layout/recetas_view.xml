@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            android:background="@drawable/boton_item">
+    <ImageView
+            android:layout_margin="8dp"
+            android:layout_width="50pt"
+            android:layout_height="60pt"
+            app:srcCompat="@drawable/pollo_empanizado"
+            android:id="@+id/comidaImagen"/>
+
+    <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_marginBottom="15dp"
+                android:id="@+id/tv_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+        android:textStyle="bold"
+        android:textSize="8pt"/>
+
+        <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripción de la comida"/>
+    </LinearLayout>
+</LinearLayout>

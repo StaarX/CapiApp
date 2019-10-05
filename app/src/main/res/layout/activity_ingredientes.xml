@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Ingredientes"
+        android:orientation="vertical"
+        android:background="#D6FEF7">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="#53875A">
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INGREDIENTES"
+                android:textSize="10pt"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#F7EBE3"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+        <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="26dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Nombre"
+                    android:id="@+id/txt_nombre"
+                    android:textSize="11pt"
+                    android:textAlignment="center"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción"
+                    android:id="@+id/txt_descripcion"
+                    android:textSize="9pt"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Platillo terminado"
+                    android:textAlignment="center"
+                    android:textSize="11pt"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:id="@+id/ingredientesImagen"
+                    android:src="@drawable/pollo_empanizado"
+            />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+        android:id="@+id/ingredienteView">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Ingredientes:"
+                    android:id="@+id/txt_ingrediente"
+                    android:textAlignment="center"
+                    android:textSize="8pt"
+            android:layout_marginBottom="22dp"/>
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2 huevos"
+                    android:id="@+id/txt_ingrediente1"
+            />
+
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pan molido/Galletas saladas"
+                    android:id="@+id/txt_ingrediente2"
+            />
+
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 Kilo de pollo"
+                    android:id="@+id/txt_ingrediente3"
+            />
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+        android:id="@+id/sugeridosView">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Pueden usarse pero no es necesario:"
+                    android:id="@+id/txt_sugerencias"
+                    android:textAlignment="center"
+                    android:textSize="8pt"
+            />
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aguacate"
+                    android:id="@+id/txt_ingredienteSugerido"
+            />
+
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pan molido/Galletas saladas"
+                    android:id="@+id/txt_ingredienteSugerido2"
+            />
+
+            <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chile tatemado"
+                    android:id="@+id/txt_ingredienteSugerido3"
+            />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp">
+
+        <Button
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:text="Empezar Receta"
+                android:textSize="11dp"
+                android:id="@+id/btn_empezarReceta"
+        android:drawableRight="@drawable/icono_ereceta"
+                android:background="@drawable/botones_receta"
+                android:textColor="#fff"
+        />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+
+
+    <!--<ImageView android:layout_width="match_parent" android:layout_height="match_parent"-->
+               <!--android:src="@drawable/fondo"-->
+               <!--android:scaleType="centerCrop"/>-->
+    <ImageView android:layout_width="match_parent" android:layout_height="160dp"
+               android:src="@drawable/logo_cappital"
+               android:layout_marginTop="10dp"
+               android:id="@+id/logo"
+    android:scaleType="fitCenter"
+    android:layout_marginBottom="30dp"/>
+
+
+<ScrollView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:layout_below="@id/logo">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+    android:background="@drawable/rectangulo"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp">
+
+
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:text="Iniciar sesión"
+                  android:textColor="#fff"
+                  android:textSize="18sp"
+                  android:textStyle="bold"
+                  android:paddingStart="10dp"
+                  android:paddingEnd="10dp"
+                  android:paddingTop="10dp"
+        />
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:text="Ingresa tus datos a continuación"
+                  android:textColor="#fff"
+                  android:textSize="14sp"
+                  android:textStyle="normal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="25dp"/>
+
+
+
+        <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+        android:hint="Correo electrónico"
+        android:background="@drawable/campos2"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:drawableLeft="@drawable/icono_usuario"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/et_email"/>
+
+        <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Contraseña"
+                android:background="@drawable/campos2"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="18dp"
+                android:inputType="textPassword"
+                android:id="@+id/et_pass"
+        android:drawableLeft="@drawable/candadito"
+        />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+            <Button android:layout_width="wrap_content" android:layout_height="50dp"
+                    android:id="@+id/btn_Registrar"
+                    android:text="Registrar"
+                    android:background="@drawable/botones"
+                    android:layout_marginRight="7dp"
+                    android:textColor="#fff"
+            />
+
+            <Button android:layout_width="wrap_content" android:layout_height="50dp"
+                    android:id="@+id/btn_Ingresar"
+                    android:text="INGRESAR"
+            android:background="@drawable/botones"
+            android:textColor="#fff"
+            android:layout_marginLeft="7dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+</RelativeLayout>
